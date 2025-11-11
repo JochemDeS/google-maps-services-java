@@ -19,6 +19,7 @@ import java.io.Serializable;
 import java.net.URL;
 import java.time.Instant;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * The result of a Place Details request. A Place Details request returns more comprehensive
@@ -235,7 +236,7 @@ public class PlaceDetails implements Serializable {
    * DRIVE_THROUGH, PICKUP, or TAKEOUT) based on the types of the place. This field includes the
    * special_days subfield of all hours, set for dates that have exceptional hours.
    */
-  public OpeningHours secondaryOpeningHours;
+  public List<OpeningHours> secondaryOpeningHours;
 
   /** Specifies if the place serves beer. */
   public Boolean servesBeer;
